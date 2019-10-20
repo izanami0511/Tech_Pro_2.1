@@ -1,6 +1,8 @@
 #pragma once
 
 #include <iostream>
+#include <string>
+#include <fstream>
 
 using namespace std;
 
@@ -14,12 +16,7 @@ public:
 	virtual void Enter() = 0;
 	virtual void FilePrint() = 0;
 	virtual void FileEnter() = 0;
-
-	virtual void Description() = 0;
-	virtual void Name() = 0;
-	virtual void Relantionships() = 0;
-	virtual void BirthDay() = 0;
-	virtual void DeathDay() = 0;
-	virtual void Age() = 0;
+	virtual void desc() = 0;
+	virtual void relantionships() = 0;
 };
 

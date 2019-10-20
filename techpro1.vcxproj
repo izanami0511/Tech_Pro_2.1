@@ -116,10 +116,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="FamilyTree.h" />
+    <ClInclude Include="grans.h" />
     <ClInclude Include="human.h" />
+    <ClInclude Include="parents.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="grans.cpp" />
     <ClCompile Include="human.cpp" />
+    <ClCompile Include="parents.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

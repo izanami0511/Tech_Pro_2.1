@@ -125,6 +125,7 @@
     <ClCompile Include="child.cpp" />
     <ClCompile Include="grans.cpp" />
     <ClCompile Include="human.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="parents.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

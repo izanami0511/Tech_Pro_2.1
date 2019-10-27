@@ -9,15 +9,19 @@ using namespace std;
 class Human
 {
 protected:
-	base **mas;
+	int size_g = 0;
+	int size_p = 0;
+	int size_c = 0;
+	base *mas_g = new grans[size_g];
+	base *mas_p = new parents[size_p];
+	base *mas_c = new child[size_c];
 public:
 
 	void Print();
-	void Enter();
 	void FilePrint();
 	void FileEnter();
 
-	void add_el(base &op);
+	void add_el();
 	
 };
 

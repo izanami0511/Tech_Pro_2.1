@@ -20,26 +20,26 @@ public:
 	child(string op1, string op2, string op3, string op4, string op5, int op6, string op7, string inf1, string inf2, string inf3);
 	~child();
 
-	virtual void setFName(string op) { base::setFName(op); };
-	virtual void setSName(string op) { base::setSName(op); };
-	virtual void setPatr(string op) { base::setPatr(op); };
-	virtual void setBday(string op) { base::setBday(op); };
-	virtual void setDday(string op) { base::setDday(op); };
-	virtual void setAge (int op) { base::setAge(op); };
-	virtual void setDesc(string op) { base::setDesc(op); };
-	virtual void setInfPar(string op) { base::setInfPar(op); };
-	virtual void setInfSp(string op) { base::setInfSp(op); };
-	virtual void setInfCh(string op) { base::setInfCh(op); };
+	void setFName(string op) { base::setFName(op); };
+	void setSName(string op) { base::setSName(op); };
+	void setPatr(string op) { base::setPatr(op); };
+	void setBday(string op) { base::setBday(op); };
+	void setDday(string op) { base::setDday(op); };
+	void setAge (int op) { base::setAge(op); };
+	void setDesc(string op) { base::setDesc(op); };
+	void setInfPar(string op) { base::setInfPar(op); };
+	void setInfSp(string op) { base::setInfSp(op); };
+	void setInfCh(string op) { base::setInfCh(op); };
 
-	virtual string* getFName() { return base::getFName(); };
-	virtual string* getSName() { return base::getSName(); };
-	virtual string* getPatr() { return base::getPatr(); };
-	virtual string* getBday() { return base::getDday(); };
-	virtual string* getDday() { return base::getDday(); };
-	virtual int* getAge() { return base::getAge(); };
-	virtual string* getDesc() { return base::getDesc(); };
-	virtual string* getInfPar() { return base::getInfPar(); };
-	virtual string* getInfSp() { return base::getInfSp(); };
-	virtual string* getInfCh() { return base::getInfCh(); };
+	string* getFName() { return base::getFName(); };
+	string* getSName() { return base::getSName(); };
+	string* getPatr() { return base::getPatr(); };
+	string* getBday() { return base::getDday(); };
+	string* getDday() { return base::getDday(); };
+	int* getAge() { return base::getAge(); };
+	string* getDesc() { return base::getDesc(); };
+	string* getInfPar() { return base::getInfPar(); };
+	string* getInfSp() { return base::getInfSp(); };
+	string* getInfCh() { return base::getInfCh(); };
 };
 

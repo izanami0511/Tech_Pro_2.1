@@ -115,12 +115,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="child.h" />
     <ClInclude Include="FamilyTree.h" />
     <ClInclude Include="grans.h" />
     <ClInclude Include="human.h" />
     <ClInclude Include="parents.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="child.cpp" />
     <ClCompile Include="grans.cpp" />
     <ClCompile Include="human.cpp" />
     <ClCompile Include="parents.cpp" />

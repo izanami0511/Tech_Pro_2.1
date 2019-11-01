@@ -3,16 +3,16 @@
 grans::grans()
 {
 	cout << "Class grans constructor was used.";
-	FirstName = nullptr;
-	Surname = nullptr;
-	Patronymic = nullptr;
-	Bday = nullptr;
-	Dday = nullptr;
+	FirstName = "0";
+	Surname = "0";
+	Patronymic = "0";
+	Bday = "0";
+	Dday = "0";
 	age = 0;
-	Description = nullptr;
-	inf_parents = nullptr;
-	inf_spouse = nullptr;
-	inf_children = nullptr;
+	Description = "0";
+	inf_parents = "0";
+	inf_spouse = "0";
+	inf_children = "0";
 }
 
 grans::grans(grans & op)
@@ -49,4 +49,9 @@ grans::grans(string op1, string op2, string op3, string op4, string op5, int op6
 grans::~grans()
 {
 	cout << "~grans" << endl;
+}
+
+void grans::saymyname()
+{
+	;
 }

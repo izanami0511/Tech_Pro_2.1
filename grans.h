@@ -20,6 +20,8 @@ public:
 	grans(string op1, string op2, string op3, string op4, string op5, int op6, string op7, string inf1, string inf2, string inf3);
 	~grans();
 
+	void saymyname();
+
 	void setFName(string op) { base::setFName(op); };
 	void setSName(string op) { base::setSName(op); };
 	void setPatr(string op) { base::setPatr(op); };

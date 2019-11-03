@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(11): error C2660: Keeper<grans>::print: функция не принимает 0 аргументов
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(72): note:  см. объявление "Keeper<grans>::print"
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(14): error C2660: Keeper<grans>::print: функция не принимает 0 аргументов
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(72): note:  см. объявление "Keeper<grans>::print"

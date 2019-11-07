@@ -1,5 +1,3 @@
-#include <iostream>
-#include <Windows.h>
 #include "Keeper.h"
 
 using namespace std;
@@ -7,11 +5,13 @@ using namespace std;
 int main() {
 	Keeper<grans> *b1 = new Keeper<grans>;
 	grans b;
-	b1->addObject(b);
-	b1->print();
+	Keeper<parents> *p1 = new Keeper<parents>;
+	parents p;
+	p1->addObject(p);
+	p1->print();
 	cout << "---------------------------------------" << endl;
-	b1->addObject(b);
-	b1->print();
+	p1->addObject(p);
+	p1->print();
 	system("pause");
 	return 0;
 }

@@ -8,11 +8,7 @@ grans::grans()
 	Patronymic = "0";
 	Bday = "0";
 	Dday = "0";
-<<<<<<< HEAD
-	age = 0;
-=======
 	age = "0";
->>>>>>> New Fixes
 	Description = "0";
 	inf_parents = "0";
 	inf_spouse = "0";
@@ -34,11 +30,7 @@ grans::grans(grans & op)
 	setInfCh(*op.getInfCh());
 }
 
-<<<<<<< HEAD
-grans::grans(string op1, string op2, string op3, string op4, string op5, int op6, string op7, string inf1, string inf2, string inf3)
-=======
 grans::grans(string op1, string op2, string op3, string op4, string op5, string op6, string op7, string inf1, string inf2, string inf3)
->>>>>>> New Fixes
 {
 	cout << "Class grans constructor with parameters was used.";
 	setFName(op1);
@@ -62,8 +54,5 @@ grans::~grans()
 void grans::saymyname()
 {
 	;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> New Fixes
+

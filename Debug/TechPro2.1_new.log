@@ -1,5 +1,19 @@
-﻿  main.cpp
-c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(11): error C2660: Keeper<grans>::print: функция не принимает 0 аргументов
-  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(72): note:  см. объявление "Keeper<grans>::print"
-c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(14): error C2660: Keeper<grans>::print: функция не принимает 0 аргументов
-  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(72): note:  см. объявление "Keeper<grans>::print"
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (techpro1.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  child.cpp
+  grans.cpp
+  main.cpp
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(59): warning C4018: <: несоответствие типов со знаком и без знака
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(27): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(10): note: выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<parents>::addObject(T)"
+          with
+          [
+              T=parents
+          ]
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(8): note: выполняется компиляция ссылки на экземпляр шаблон класс "Keeper<parents>"
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(63): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(82): warning C4018: <: несоответствие типов со знаком и без знака
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(81): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(11): note: выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<parents>::print(void)"
+  parents.cpp
+  Создание кода...
+  TechPro2.1_new.vcxproj -> C:\Users\izana\source\repos\TechPro2.1_new\Debug\TechPro2.1_new.exe

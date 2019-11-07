@@ -24,8 +24,6 @@ public:
 		cout << "~Keeper." << endl;
 	}
 
-	//T* buildObject() { T* obj = new T; return obj; }
-
 	void addObject(T obj) {
 		cin.ignore(10000, '\n');
 		string h;
@@ -72,50 +70,18 @@ public:
 	void print();
 };
 
+//add po nomeru
+
+//del po nomeru
+
+//print/vivod po nomeru
+
 template <typename T>
 void Keeper<T>::print()
 {
 	for (int i = 0; i < size; i++) {
-		cout << arr[i]->getFName() << endl;
+		cout << "[" << i + 1 << "] Person, you had added." << endl;
+		cout << *(arr[i].getFName()) << endl;
+		
 	}
 }
-
-/*Алгоритм добавления (добавляет в конец, см. как пример)
-
- template <typename T>
- void MyArray<T>::addAtEnd(T _object) {
- T *tmp = new T[size + 1];
- for (int i = 0; i < size; ++i) tmp[i] = arr[i];
- delete[] this->arr;
- arr = new T[++size];
- for (int i = 0; i < size - 1; ++i) arr[i] = tmp[i];
- arr[size - 1] = _object;
- delete[] tmp;
- }
-
-
- */
- /*Алгоритм удаления (удаляет по индексу, см. как пример)
-
-
-  template <typename T>
-  void MyArray<T>::removeFromIndex(unsigned short _index) {
-  if (_index >= size) exc.out_of_bounds_ecx();
-
-  T* temp = new T[size];
-  for (unsigned short i = 0; i < size; ++i) temp[i] = arr[i];
-
-  delete[] arr;
-  arr = new T[size-1];
-
-  for (unsigned short i = 0, j = 0; i < size; ++i, ++j)
-  if (i != _index) arr[j] = temp[i];
-  else --j;
-  --size;
-
-  delete[] temp;
-  }
-
-  */
-
-  //Все классы - родственники оставь как есть

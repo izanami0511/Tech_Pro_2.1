@@ -25,28 +25,26 @@ public:
 	}
 
 	void addObject(T obj) {
-		cin.ignore(10000, '\n');
 		string h;
 		cout << "Enter Person's First Name: " << endl;
-		cin >> h;
+		getline(cin, h);
 		obj.setFName(h);
 		cout << "Enter Person's  Surname: " << endl;
-		cin >> h;
+		getline(cin, h);
 		obj.setSName(h);
 		cout << "Enter Person's Patronymic: " << endl;
-		cin >> h;
+		getline(cin, h);
 		obj.setPatr(h);
 		cout << "Enter Person's BirthDay: " << endl;
-		cin >> h;
+		getline(cin, h);
 		obj.setBday(h);
 		cout << "Enter Person's Death Day (if it's neccesery): " << endl;
-		cin >> h;
+		getline(cin, h);
 		obj.setDday(h);
 		cout << "Enter Person's Age: " << endl;
-		cin >> h;
+		getline(cin, h);
 		obj.setAge(h);
 		cout << "Enter Person's Parents(if it's necccesery): " << endl;
-		getchar();
 		getline(cin, h);
 		obj.setInfPar(h);
 		cout << "Enter Person's Spouse(if it's necccesery): " << endl;
@@ -65,9 +63,9 @@ public:
 		arr[size - 1] = obj;
 		delete[] temp;
 	}
-	void deleteObject(unsigned int index); // index - номер удаляемого элемента
-
+	void deleteObject(); 
 	void print();
+	void deleteObject_index(unsigned int index);
 };
 
 //add po nomeru
@@ -82,6 +80,43 @@ void Keeper<T>::print()
 	for (int i = 0; i < size; i++) {
 		cout << "[" << i + 1 << "] Person, you had added." << endl;
 		cout << *(arr[i].getFName()) << endl;
-		
+		cout << *(arr[i].getSName()) << endl;
+		cout << *(arr[i].getPatr()) << endl;
+		cout << *(arr[i].getBday()) << endl;
+		cout << *(arr[i].getDday()) << endl;
+		cout << *(arr[i].getAge()) << endl;
+		cout << *(arr[i].getInfPar()) << endl;
+		cout << *(arr[i].getInfSp()) << endl;
+		cout << *(arr[i].getInfCh()) << endl;
 	}
+}
+
+template <typename T>
+void Keeper<T>::deleteObject()
+{
+	T *temp = new T[size + 1];
+	for (int i = 0; i < size; i++)
+		temp[i] = arr[i];
+	delete[] arr;
+	arr = new T[--size];
+	for (int i = 0; i < size; ++i)
+		arr[i] = temp[i];
+}
+
+template <typename T>
+void Keeper<T>::deleteObject_index(unsigned int index)
+{
+	//doesn't delete last of 3 element...
+	T *temp = new T[size + 1];
+	for (int i = 0; i < size; i++)
+		temp[i] = arr[i];
+	delete[] arr;
+	arr = new T[size-1];
+	for (int i = 0, j = 0; i < size; ++i,++j) {
+		if (i != index)
+			arr[j] = temp[i];
+		else { j--; }
+			size--;
+	}
+	delete[]temp;
 }

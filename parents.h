@@ -35,7 +35,7 @@ public:
 	string* getFName() { return base::getFName(); };
 	string* getSName() { return base::getSName(); };
 	string* getPatr() { return base::getPatr(); };
-	string* getBday() { return base::getDday(); };
+	string* getBday() { return base::getBday(); };
 	string* getDday() { return base::getDday(); };
 	string* getAge() { return base::getAge(); };
 	string* getDesc() { return base::getDesc(); };

@@ -1,19 +1,15 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (techpro1.vcxproj).  Это может привести к ошибкам очистки и перестроения.
   main.cpp
-c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(57): warning C4018: <: несоответствие типов со знаком и без знака
-  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(27): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
-  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(10): note: выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<parents>::addObject(T)"
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(165): warning C4018: <: несоответствие типов со знаком и без знака
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(144): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(12): note: выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<parents>::enter_from_file(std::ifstream &,T)"
           with
           [
               T=parents
           ]
   c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(8): note: выполняется компиляция ссылки на экземпляр шаблон класс "Keeper<parents>"
-c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(61): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(80): warning C4018: <: несоответствие типов со знаком и без знака
-  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(79): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
-  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(12): note: выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<parents>::print(void)"
-c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(110): warning C4018: <: несоответствие типов со знаком и без знака
-  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(108): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
-  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(21): note: выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<parents>::deleteObject_index(unsigned int)"
-c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(114): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(169): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(178): warning C4018: <: несоответствие типов со знаком и без знака
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(177): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(14): note: выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<parents>::print_in_file(std::ofstream &)"
   TechPro2.1_new.vcxproj -> C:\Users\izana\source\repos\TechPro2.1_new\Debug\TechPro2.1_new.exe

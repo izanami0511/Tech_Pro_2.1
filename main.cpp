@@ -7,19 +7,11 @@ int main() {
 	grans b;
 	Keeper<parents> *p1 = new Keeper<parents>;
 	parents p;
-	p1->addObject(p);
-	system("cls");
-	p1->print();
-	cout << "---------------------------------------" << endl;
-	p1->addObject(p);
-	system("cls");
-	p1->print();
-	cout << "---------------------------------------" << endl;
-	p1->addObject(p);
-	system("cls");
-	p1->print();
-	p1->deleteObject_index(0);
-	p1->print();
+	ifstream fin("grans_in.txt");
+	ofstream fout("grans_out.txt");
+	p1->enter_from_file(fin,p);
+	p1->enter_from_file(fin, p);
+	p1->print_in_file(fout);
 	system("pause");
 	return 0;
 }

@@ -19,7 +19,7 @@ public:
 	parents(string op1, string op2, string op3, string op4, string op5, string op6, string op7, string inf1, string inf2, string inf3);
 	~parents();
 
-	void saymyname();
+	string saymyname();
 
 	void setFName(string op) { base::setFName(op); };
 	void setSName(string op) { base::setSName(op); };

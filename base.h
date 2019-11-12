@@ -19,7 +19,7 @@ class base
 	string inf_children;
 
 public:
-	virtual void saymyname() = 0;
+	virtual string saymyname() = 0;
 	virtual ~base() { cout << "~base " << endl; };
 	virtual void setFName(string op) { FirstName = op; };
 	virtual void setSName(string op) { Surname = op; };

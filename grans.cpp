@@ -2,7 +2,7 @@
 
 grans::grans()
 {
-	cout << "Class grans constructor was used.";
+	cout << "Class grans constructor was used." << endl;
 	FirstName = "0";
 	Surname = "0";
 	Patronymic = "0";
@@ -17,7 +17,7 @@ grans::grans()
 
 grans::grans(grans & op)
 {
-	cout << "Class grans copy constructor was used.";
+	cout << "Class grans copy constructor was used." << endl;
 	setFName(*op.getFName());
 	setSName(*op.getSName());
 	setPatr(*op.getPatr());
@@ -32,7 +32,7 @@ grans::grans(grans & op)
 
 grans::grans(string op1, string op2, string op3, string op4, string op5, string op6, string op7, string inf1, string inf2, string inf3)
 {
-	cout << "Class grans constructor with parameters was used.";
+	cout << "Class grans constructor with parameters was used." << endl;
 	setFName(op1);
 	setSName(op2);
 	setPatr(op3);
@@ -48,11 +48,11 @@ grans::grans(string op1, string op2, string op3, string op4, string op5, string 
 
 grans::~grans()
 {
-	cout << "~grans" << endl;
+	cout << "~grans" << endl << endl;
 }
 
-void grans::saymyname()
+string grans::saymyname()
 {
-	;
+	return "Grandparent:";
 }
 

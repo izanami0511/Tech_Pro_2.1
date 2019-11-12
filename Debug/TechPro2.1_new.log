@@ -1,15 +1,42 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (techpro1.vcxproj).  Это может привести к ошибкам очистки и перестроения.
   main.cpp
-c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(165): warning C4018: <: несоответствие типов со знаком и без знака
-  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(144): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
-  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(12): note: выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<parents>::enter_from_file(std::ifstream &,T)"
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(79): warning C4018: <: несоответствие типов со знаком и без знака
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(49): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(51): note: выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<grans>::addObject(T)"
           with
           [
-              T=parents
+              T=grans
           ]
-  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(8): note: выполняется компиляция ссылки на экземпляр шаблон класс "Keeper<parents>"
-c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(169): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(178): warning C4018: <: несоответствие типов со знаком и без знака
-  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(177): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
-  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(14): note: выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<parents>::print_in_file(std::ofstream &)"
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(6): note: выполняется компиляция ссылки на экземпляр шаблон класс "Keeper<grans>"
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(83): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(114): warning C4018: <: несоответствие типов со знаком и без знака
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(108): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(82): note: выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<grans>::deleteObject(void)"
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(118): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(121): warning C4101: i: неиспользованная локальная переменная
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(92): warning C4018: <: несоответствие типов со знаком и без знака
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(91): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(140): note: выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<grans>::print(void)"
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(129): warning C4018: <: несоответствие типов со знаком и без знака
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(128): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(111): note: выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<grans>::deleteObject_index(unsigned int)"
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(142): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(146): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(155): warning C4101: i: неиспользованная локальная переменная
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(163): warning C4018: <: несоответствие типов со знаком и без знака
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(162): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(169): note: выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<grans>::print_index(unsigned int)"
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(214): warning C4018: <: несоответствие типов со знаком и без знака
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(187): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(200): note: выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<grans>::enter_from_file(std::ifstream &,T,int)"
+          with
+          [
+              T=grans
+          ]
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(218): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(224): warning C4101: i: неиспользованная локальная переменная
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(236): warning C4018: <: несоответствие типов со знаком и без знака
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(231): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\main.cpp(233): note: выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<grans>::print_in_file(std::ofstream &)"
+c:\users\izana\source\repos\techpro2.1_new\techpro2.1_new\keeper.h(249): warning C4101: i: неиспользованная локальная переменная
   TechPro2.1_new.vcxproj -> C:\Users\izana\source\repos\TechPro2.1_new\Debug\TechPro2.1_new.exe

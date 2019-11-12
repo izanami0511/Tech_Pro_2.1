@@ -2,7 +2,7 @@
 
 child::child()
 {
-	cout << "Class child constructor was used.";
+	cout << "Class child constructor was used." << endl;
 	FirstName = "0";
 	Surname = "0";
 	Patronymic = "0";
@@ -18,7 +18,7 @@ child::child()
 
 child::child(child & op)
 {
-	cout << "Class child copy constructor was used.";
+	cout << "Class child copy constructor was used." << endl;
 	setFName(*op.getFName());
 	setSName(*op.getSName());
 	setPatr(*op.getPatr());
@@ -33,7 +33,7 @@ child::child(child & op)
 
 child::child(string op1, string op2, string op3, string op4, string op5, string op6, string op7, string inf1, string inf2, string inf3)
 {
-	cout << "Class child constructor with parameters was used.";
+	cout << "Class child constructor with parameters was used." << endl;
 	setFName(op1);
 	setSName(op2);
 	setPatr(op3);
@@ -49,11 +49,11 @@ child::child(string op1, string op2, string op3, string op4, string op5, string 
 
 child::~child()
 {
-	cout << "~child" << endl;
+	cout << "~child" << endl << endl;
 }
 
-void child::saymyname()
+string child::saymyname()
 {
-	;
+	return "Child:";
 }
 

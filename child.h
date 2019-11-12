@@ -21,7 +21,7 @@ public:
 	~child();
 	
 
-	void saymyname();
+	string saymyname();
 
 	void setFName(string op) { base::setFName(op); };
 	void setSName(string op) { base::setSName(op); };

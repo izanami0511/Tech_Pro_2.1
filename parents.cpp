@@ -4,7 +4,7 @@
 
 parents::parents()
 {
-	cout << "Class parents constructor was used.";
+	cout << "Class parents constructor was used." << endl;
 	FirstName = "0";
 	Surname = "0";
 	Patronymic = "0";
@@ -19,7 +19,7 @@ parents::parents()
 
 parents::parents(parents & op)
 {
-	cout << "Class parents copy constructor was used.";
+	cout << "Class parents copy constructor was used." << endl;
 	setFName(*op.getFName());
 	setSName(*op.getSName());
 	setPatr(*op.getPatr());
@@ -34,7 +34,7 @@ parents::parents(parents & op)
 
 parents::parents(string op1, string op2, string op3, string op4, string op5, string op6, string op7, string inf1, string inf2, string inf3)
 {
-	cout << "Main constructor with parameters was used.";
+	cout << "Main constructor with parameters was used." << endl;
 	setFName(op1);
 	setSName(op2);
 	setPatr(op3);
@@ -50,11 +50,11 @@ parents::parents(string op1, string op2, string op3, string op4, string op5, str
 
 parents::~parents()
 {
-	cout << "~parents" << endl;
+	cout << "~parents" << endl << endl;
 }
 
-void parents::saymyname()
+string parents::saymyname()
 {
-	;
+	return "Parent:";
 }
 

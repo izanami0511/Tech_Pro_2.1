@@ -18,6 +18,18 @@ public:
 		cout << "Constructor Keeper." << endl;
 		size = 0;
 		arr = new T [1];
+	} 
+
+	Keeper(T &op) {
+		cout << "Constructor of copy Keeper." << endl;
+		size = op.size;
+		for (int i = 0; i < size; i++)
+			arr[i] = op.arr[i];
+	}
+
+	Keeper(int i) {
+		cout << "Constructor with arguments Keeper." << endl;
+		size = i;
 	}
 
 	~Keeper() {
@@ -29,7 +41,7 @@ public:
 	void print();
 	void deleteObject_index(unsigned int index);
 	void print_index(unsigned int index);
-	void enter_from_file(ifstream &file,T obj);
+	void enter_from_file(ifstream &file,T obj,int value);
 	void print_in_file(ofstream &file);
 };
 
@@ -78,7 +90,7 @@ template <typename T>
 void Keeper<T>::print()
 {
 	for (int i = 0; i < size; i++) {
-		cout << "[" << i + 1 << "] Person, you had added." << endl;
+		cout << "[" << i + 1 << "]."<< arr[i].saymyname() << endl;
 		cout << *(arr[i].getFName()) << endl;
 		cout << *(arr[i].getSName()) << endl;
 		cout << *(arr[i].getPatr()) << endl;
@@ -93,96 +105,148 @@ void Keeper<T>::print()
 
 template <typename T>
 void Keeper<T>::deleteObject()
-{
-	T *temp = new T[size + 1];
-	for (int i = 0; i < size; i++)
-		temp[i] = arr[i];
-	delete[] arr;
-	arr = new T[--size];
-	for (int i = 0; i < size; ++i)
-		arr[i] = temp[i];
+{ 
+	try {
+		if (size <= 0) {
+			throw 666;
+		}
+		T *temp = new T[size + 1];
+		for (int i = 0; i < size; i++)
+			temp[i] = arr[i];
+		delete[] arr;
+		arr = new T[--size];
+		for (int i = 0; i < size; ++i)
+			arr[i] = temp[i];
+	}
+	catch (int i) {
+		cout << "There are no elements to delete." << endl;
+	}
 }
 
 template <typename T>
 void Keeper<T>::deleteObject_index(unsigned int index)
 {
-	T *temp = new T[size + 1];
-	for (int i = 0; i < size; i++)
-		temp[i] = arr[i];
-	delete[] arr;
-	arr = new T[size];
-	for (int i = 0, j = 0; i < size; ++i,++j) {
-		if (i != index)
-			arr[j] = temp[i];
-		else  
-			j--; 
+	for (int i = 0; i < size; i++) {
+		cout << "[" << i + 1 << "]" << *(arr[i].getFName()) << endl;
+		cout << *(arr[i].getSName()) << endl;
+		cout << *(arr[i].getPatr()) << endl;
+		cout << endl;
 	}
-	size--;
-	delete[]temp;
+	cout << "Choose who you want to delete: ";
+	cin >> index;
+	try {
+		if (index > size) {
+			throw 666;
+		}
+		T *temp = new T[size + 1];
+		for (int i = 0; i < size; i++)
+			temp[i] = arr[i];
+		delete[] arr;
+		arr = new T[size];
+		for (int i = 0, j = 0; i < size; ++i, ++j) {
+			if (i != index)
+				arr[j] = temp[i];
+			else
+				j--;
+		}
+		size--;
+		delete[]temp;
+	}
+	catch (int i) {
+		cout << "There is no element for this addres." << endl;
+	}
 }
 
 template <typename T>
 void Keeper<T>::print_index(unsigned int index)
 {
-	
-		cout << "[" << index + 1 << "] Person, you had added." << endl;
-		cout << *(arr[index].getFName()) << endl;
-		cout << *(arr[index].getSName()) << endl;
-		cout << *(arr[index].getPatr()) << endl;
-		cout << *(arr[index].getBday()) << endl;
-		cout << *(arr[index].getDday()) << endl;
-		cout << *(arr[index].getAge()) << endl;
-		cout << *(arr[index].getInfPar()) << endl;
-		cout << *(arr[index].getInfSp()) << endl;
-		cout << *(arr[index].getInfCh()) << endl;
+	for (int i = 0; i < size; i++) {
+		cout << "[" << i + 1 << "]" << *(arr[i].getFName()) << endl;
+		cout << *(arr[i].getSName()) << endl;
+		cout << *(arr[i].getPatr()) << endl;
+		cout << endl;
+	}
+	cout << "Choose who you want to print: ";
+	cin >> index;
+	index = index - 1;
+	system("cls");
+	cout << "[" << index + 1 << "]." << arr[index].saymyname() << endl;
+	cout << *(arr[index].getFName()) << endl;
+	cout << *(arr[index].getSName()) << endl;
+	cout << *(arr[index].getPatr()) << endl;
+	cout << *(arr[index].getBday()) << endl;
+	cout << *(arr[index].getDday()) << endl;
+	cout << *(arr[index].getAge()) << endl;
+	cout << *(arr[index].getInfPar()) << endl;
+	cout << *(arr[index].getInfSp()) << endl;
+	cout << *(arr[index].getInfCh()) << endl;
 }
 
 template <typename T>
-void Keeper<T>::enter_from_file(ifstream &file,T obj)
+void Keeper<T>::enter_from_file(ifstream &file,T obj, int value)
 {
-	string h;
-	getline(file, h);
-	obj.setFName(h);
-	getline(file, h);
-	obj.setSName(h);
-	getline(file, h);
-	obj.setPatr(h);
-	getline(file, h);
-	obj.setBday(h);
-	getline(file, h);
-	obj.setDday(h);
-	getline(file, h);
-	obj.setAge(h);
-	getline(file, h);
-	obj.setInfPar(h);
-	getline(file, h);
-	obj.setInfSp(h);
-	getline(file, h);
-	obj.setInfCh(h);
-	T *temp = new T[size + 1];
-	for (int i = 0; i < size; i++)
-		temp[i] = arr[i];
-	delete[] arr;
-	arr = new T[++size];
-	for (int i = 0; i < size - 1; ++i)
-		arr[i] = temp[i];
-	arr[size - 1] = obj;
-	delete[] temp;
+	try {
+		if (file.peek() == EOF){
+			throw 666;
+		}
+		
+		for (int i = 0; i < value; i++) {
+			string h;
+			getline(file, h);
+			obj.setFName(h);
+			getline(file, h);
+			obj.setSName(h);
+			getline(file, h);
+			obj.setPatr(h);
+			getline(file, h);
+			obj.setBday(h);
+			getline(file, h);
+			obj.setDday(h);
+			getline(file, h);
+			obj.setAge(h);
+			getline(file, h);
+			obj.setInfPar(h);
+			getline(file, h);
+			obj.setInfSp(h);
+			getline(file, h);
+			obj.setInfCh(h);
+			T *temp = new T[size + 1];
+			for (int i = 0; i < size; i++)
+				temp[i] = arr[i];
+			delete[] arr;
+			arr = new T[++size];
+			for (int i = 0; i < size - 1; ++i)
+				arr[i] = temp[i];
+			arr[size - 1] = obj;
+			delete[] temp;
+		}
+	}
+	catch (int i) {
+		cout << "File is empty." << endl;
+	}
 }
 
 template <typename T>
 void Keeper<T>::print_in_file(ofstream &file)
 {
-	for (int i = 0; i < size; i++) {
-		file << "[" << i + 1 << "] Person, you had added." << endl;
-		file << *(arr[i].getFName()) << endl;
-		file << *(arr[i].getSName()) << endl;
-		file << *(arr[i].getPatr()) << endl;
-		file << *(arr[i].getBday()) << endl;
-		file << *(arr[i].getDday()) << endl;
-		file << *(arr[i].getAge()) << endl;
-		file << *(arr[i].getInfPar()) << endl;
-		file << *(arr[i].getInfSp()) << endl;
-		file << *(arr[i].getInfCh()) << endl;
+	try{
+		if (size == 0) {
+			throw 666;
+		}
+		for (int i = 0; i < size; i++) {
+			file << "[" << i + 1 << "]" << arr[i].saymyname() << endl;
+			file << *(arr[i].getFName()) << endl;
+			file << *(arr[i].getSName()) << endl;
+			file << *(arr[i].getPatr()) << endl;
+			file << *(arr[i].getBday()) << endl;
+			file << *(arr[i].getDday()) << endl;
+			file << *(arr[i].getAge()) << endl;
+			file << *(arr[i].getInfPar()) << endl;
+			file << *(arr[i].getInfSp()) << endl;
+			file << *(arr[i].getInfCh()) << endl;
+		}
+	}
+	catch (int i) {
+		cout << "There is nothing to print" << endl;
 	}
 }
